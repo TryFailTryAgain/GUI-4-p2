@@ -134,26 +134,26 @@ function validateForm() {
             xStart: {
                 required: "Please enter a number",
                 number: "Please enter a number",
-                min: "Please enter a number greater than -1000000000 ",
-                max: "Please enter a number less than 1000000000",
+                min: "Please enter a number greater than -50",
+                max: "Please enter a number less than 50",
             },
             xEnd: {
                 required: "Please enter a number",
                 number: "Please enter a number",
-                min: "Please enter a number greater than -1000000000 ",
-                max: "Please enter a number less than 1000000000"
+                min: "Please enter a number greater than -50",
+                max: "Please enter a number less than 50"
             },
             yStart: {
                 required: "Please enter a number",
                 number: "Please enter a number",
-                min: "Please enter a number greater than -1000000000 ",
-                max: "Please enter a number less than 1000000000"
+                min: "Please enter a number greater than -50",
+                max: "Please enter a number less than 50"
             },
             yEnd: {
                 required: "Please enter a number",
                 number: "Please enter a number",
-                min: "Please enter a number greater than -1000000000 ",
-                max: "Please enter a number less than 1000000000"
+                min: "Please enter a number greater than -50",
+                max: "Please enter a number less than 50"
             }
         }
     });

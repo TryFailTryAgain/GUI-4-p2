@@ -99,31 +99,31 @@ function validateForm() {
             xStart: {
                 required: true,
                 number: true,
-                min: -1000000000,
-                max: 1000000000,
+                min: -50,
+                max: 50,
                 xRange: true,
                 xSmallFirst: true
             },
             xEnd: {
                 required: true,
                 number: true,
-                min: -1000000000,
-                max: 1000000000,
+                min: -50,
+                max: 50,
                 xRange: true
             },
             yStart: {
                 required: true,
                 number: true,
-                min: -1000000000,
-                max: 1000000000,
+                min: -50,
+                max: 50,
                 yRange: true,
                 ySmallFirst: true
             },
             yEnd: {
                 required: true,
                 number: true,
-                min: -1000000000,
-                max: 1000000000,
+                min: -50,
+                max: 50,
                 yRange: true
             }
         },

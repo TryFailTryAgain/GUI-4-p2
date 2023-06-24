@@ -1,0 +1,146 @@
+/*
+File: style.css
+
+w3schools.com and developer.mozilla.org were used as learning and reference material
+to structure this assignment.
+
+Copyright (c) 2023. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+Last updated: Jun 24, 2023
+*/
+
+/* Resources utilized along side w3School and developer.mozilla.org:
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/insertCell
+https://www.w3schools.com/jsref/dom_obj_table.asp
+https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild */
+
+/* //Resources utilized along side w3School:
+// https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/insertCell
+// https://www.w3schools.com/jsref/dom_obj_table.asp
+// https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild
+//jquery
+// https://jqueryvalidation.org/required-method/
+// https://jqueryvalidation.org/jQuery.validator.addMethod/
+//jquery ui
+// https://jqueryui.com/tabs/#manipulation
+// https://jqueryui.com/slider/#colorpicker
+// https://api.jqueryui.com/slider/#event-change
+// https://www.w3schools.com/jquery/sel_gt.asp */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* makes the banner */
+#banner-container {
+    background-color: #2275ac;
+    color: #000000;
+    padding: 6px;
+}
+#dataInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin: 20px;
+}
+
+
+/* shifts the labels over for the forms */
+#inputForm label {
+    margin-left: 20px;
+}
+
+/* fixes up the input fields to look better */
+#inputForm input {
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #b5b5b5;
+    /* leave some room for the slider */
+    margin-bottom: 5px;
+}
+
+/* makes the error messages stand out */
+#inputErrorMsg {
+    font-weight: bold;
+    margin: 10px;
+    color: #ff0000;
+}
+
+#slider-xStart,
+#slider-xEnd,
+#slider-yStart,
+#slider-yEnd {
+    min-width: 200px;
+    width: 10%;
+}
+/* makes the error fields red and overrides other styling */
+.error {
+    border: 3px solid #ff0000 !important;
+    background-color: #ff000069 !important;
+}
+
+#xStart-error, #xEnd-error, #yStart-error, #yEnd-error {
+    background-color: #ffffff !important;
+    border: none !important;
+    color: #ff0000 !important;
+    font-style: italic;
+}
+
+/* submit button */
+#submit {
+    padding: 10px;
+    background-color: #383838;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* adds a bit of buffer around the table */
+#jsTable {
+    margin-top: 20px;
+}
+
+
+#jsTable {
+    max-width: 80%;
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: right;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* sets the first row to stick to the top while scrolling
+   and hides cells under it*/
+tr:first-child th {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+/* sets the first cell of each row to stick and hide elements under it as well*/
+th:first-of-type {
+    position: sticky;
+    left: 0;
+    background-color: #ffffff;
+}
+
+td:nth-child(1n) {
+    background-color: #f0faff;
+}
+
+td:nth-child(2n) {
+    background-color: #e2f5ff;
+}
+
+td:nth-child(3n) {
+    background-color: #ccedff;
+}
